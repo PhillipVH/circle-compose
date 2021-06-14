@@ -25,13 +25,13 @@ jobs:
             docker-compose pull
             docker-compose up
       # Use mvn clean and package as the standard maven build phase
-      - run:
-          name: Build
-          command: mvn -B -DskipTests clean package
+      # - run:
+      #     name: Build
+      #     command: mvn -B -DskipTests clean package
       # Then run your tests!
-      - run:
-          name: Test
-          command: mvn test
+      # - run:
+      #     name: Test
+      #     command: mvn test
 
 workflows:
   # Below is the definition of your workflow.
