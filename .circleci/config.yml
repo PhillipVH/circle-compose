@@ -14,6 +14,11 @@ jobs:
     steps:
       # Checkout the code as the first step.
       - checkout
+      - run:
+          name: Launch Docker Compose services
+          command: |
+            set -x
+            docker-compose up
       # Use mvn clean and package as the standard maven build phase
       - run:
           name: Build
