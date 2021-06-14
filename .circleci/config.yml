@@ -19,7 +19,7 @@ jobs:
           command: |
             set -x
             ls
-            docker-compoes build
+            docker-compose pull
             docker-compose up
       # Use mvn clean and package as the standard maven build phase
       - run:
