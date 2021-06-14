@@ -18,6 +18,8 @@ jobs:
           name: Launch Docker Compose services
           command: |
             set -x
+            ls
+            docker-compoes build
             docker-compose up
       # Use mvn clean and package as the standard maven build phase
       - run:
